@@ -6,5 +6,7 @@ This Python script generates a simple pattern of asterisks (*) and nummners base
 
 ## Variables:
 i/row: This is the row counter, initialized to 1.
+
 j/col: This is the column counter.
+
 n: The number of rows and columns, entered by the user.
