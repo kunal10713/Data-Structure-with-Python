@@ -39,13 +39,15 @@ a | b -> 0110 (result is 6 in decimal)
 The **NOT operator** flips all bits of the number. In Python, the bitwise NOT operation is equivalent to `-(n + 1)` for any integer `n`.
 
 - **NOT operation on `a = 4`**:
-a = 4 -> 0100 ~a -> 1011 (which is -5 in decimal, because Python stores integers using two's complement form)
+a = 4 -> 0100 
+~a -> 1011 (which is -5 in decimal, because Python stores integers using two's complement form)
 
 **Output**: `NOT operator ~a --> -5`
 
 - **NOT operation on `b = 6`**:
 
-b = 6 -> 0110 ~b -> 1001 (which is -7 in decimal)
+b = 6 -> 0110 
+~b -> 1001 (which is -7 in decimal)
 
 **Output**: `NOT operator ~b --> -7`
 
