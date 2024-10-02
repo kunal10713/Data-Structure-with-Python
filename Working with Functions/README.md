@@ -10,7 +10,7 @@ In Python, when you pass a variable (which can be either mutable or immutable) t
 
 **Example:**
 
-### 2. Variable Update in Python
+### 1. Variable Update in Python
 
 **Immutable Objects (e.g., integers, strings, tuples)**
 - If you pass an immutable object (like an integer or string) to a function and try to modify it, you will not change the original variable. Instead, you will create a new object in memory, and the original variable remains unchanged.
@@ -40,7 +40,7 @@ In this example, the original variable value remains unchanged because the reass
 
 
 
-### 3. Mutable Objects (e.g., lists, dictionaries)
+### 2. Mutable Objects (e.g., lists, dictionaries)
 If you pass a mutable object (like a list or dictionary) to a function and modify its contents (such as appending or changing an element), the original variable will be affected since both the parameter and the original variable reference the same object.
 
 
