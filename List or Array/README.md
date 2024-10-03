@@ -1,6 +1,6 @@
-# Initializing Lists in ```python
+# Initializing Lists in python
 
-This guide explains how to initialize lists in ```python using various methods. ```python lists are versatile and can contain elements of different data types, unlike arrays in some other programming languages like C++.
+This guide explains how to initialize lists in python using various methods. python lists are versatile and can contain elements of different data types, unlike arrays in some other programming languages like C++.
 
 ## 1. Creating an Empty List
 ```python
