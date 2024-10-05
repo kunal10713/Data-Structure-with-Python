@@ -86,11 +86,9 @@ ans.extend([2] * 2)  # This adds the individual elements 2, 2 to the list, resul
 
 ### append() vs. extend():
 - append():
-
--- Adds the object passed as a single element.
--- If you pass a list, it adds that list as one element. So, using ans.append([elem] * min_count) would add a list of repeated elements (e.g., [2, 2]) as a single item in the ans list, resulting in [[2, 2]].
+    -  Adds the object passed as a single element.
+    - If you pass a list, it adds that list as one element. So, using ans.append([elem] * min_count) would add a list of repeated elements (e.g., [2, 2]) as a single item in the ans list, resulting in [[2, 2]].
 
 - extend():
-
--- Iterates over the iterable and adds each element individually to the list.
--- This results in a flat list of repeated elements, which is the desired output format.
+    - Iterates over the iterable and adds each element individually to the list.
+    - This results in a flat list of repeated elements, which is the desired output format.
