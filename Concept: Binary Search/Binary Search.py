@@ -10,7 +10,7 @@ def binary_search(arr, size, key):
 
         # Check if the middle element is the key
         if arr[mid] == key:
-            return mid
+            return mid 
 
         # If key is greater, ignore the left half
         elif key > arr[mid]:
@@ -31,7 +31,7 @@ print("Enter the elements of the array (sorted in ascending order):")
 
 # Take input for each element of the array
 for x in range(size):
-    element = int(input(f"Element {x + 1}: "))
+    element = int(input(f"Element at index {x}: "))
     arr.append(element)  # Append each element to the list
 
 # Input the key to be searched
