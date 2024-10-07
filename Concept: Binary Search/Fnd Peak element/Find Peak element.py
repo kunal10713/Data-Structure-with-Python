@@ -1,12 +1,3 @@
-'''
-Problem Statement:
-Given an array representing a mountain, where elements first increase to a peak and then decrease, 
-the goal is to find the index of the peak element using binary search. 
-The peak element is defined as the element that is greater than its neighbors. 
-This problem is an application of binary search on a special array structure.
-'''
-
-
 def find_peak_element(arr):
     # Initialize pointers
     start = 0
