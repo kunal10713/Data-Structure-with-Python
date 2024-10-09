@@ -1,0 +1,62 @@
+def is_possible_solution(arr, size, number_of_students, mid):
+    student_count = 1  # Start with the first student
+    page_sum = 0
+
+    for i in range(size):
+        # Check if adding current book to current student exceeds mid limit
+        if page_sum + arr[i] <= mid:
+            page_sum += arr[i]
+        else:
+            # Assign current book to next student
+            student_count += 1
+            # If the current book has more pages than mid or we have procceed more student that number_of_students
+            if arr[i] > mid or student_count > number_of_students:
+                return False
+            page_sum = 0
+            page_sum = arr[i]  # Start a new sum for the next student
+
+    return True
+
+
+def book_allocation(arr, size, number_of_students):
+    if number_of_students > size:
+        # If the number of students is greater than the number of books, allocation is not possible
+        return -1
+
+    # Initialize start to max pages in a single book and end to sum of all pages
+    start = 0
+    end = sum(arr)
+    ans = -1  # To store the final answer
+
+    mid = (start + end) // 2 
+    # Binary search to find the minimum maximum pages a student has to read
+    while start <= end:
+
+        if is_possible_solution(arr, size, number_of_students, mid):
+            ans = mid
+            end = mid - 1  # Try to find a lower value in the left side
+        else:
+            start = mid + 1  # Try to find a valid allocation in the right side
+
+        mid = (start + end) // 2 
+    
+    return ans
+
+
+# Driver code to test the function
+size = int(input("Enter the number of books: "))
+print("Enter the number of pages in each book:")
+
+arr = []
+for x in range(size):
+    ele = int(input(f"Enter the pages at index {x}: "))
+    arr.append(ele)
+
+number_of_students = int(input("Enter the number of students: "))  # Input number of students
+
+# Output the result of book allocation
+result = book_allocation(arr, size, number_of_students)
+if result != -1:
+    print(f"The minimum of the maximum pages assigned to a student is: {result}")
+else:
+    print("Book allocation not possible with given number of students.")
