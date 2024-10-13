@@ -46,13 +46,3 @@ This creates another new string "hello world" without changing the string "Hello
 
 ## Python's Immutability: 
 - Immutability doesn't mean you `can't "change" what a variable refers to`, but rather that the underlying string objects cannot be altered once they are created.
-
-
-# Add on:
-- In Python, strings are objects, and their length is internally stored. Python automatically tracks the length of a string, so there's no need for a null character.
-- When you call len(s) in Python, it directly returns the length of the string by accessing this stored value.
-```python
-s = "Hello"
-print(len(s))  # Output: 5
-```
-- Python doesn't rely on scanning for a terminating character. Instead, it uses the stored length to manage string operations efficiently.
