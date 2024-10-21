@@ -19,6 +19,12 @@ The time complexity of selection sort depends on the number of comparisons made 
 
 Selection sort is an in-place sorting algorithm, meaning it does not require additional memory for another array or list. It only uses a constant amount of extra space for index variables.
 
+
+### Why the Outer Loop Runs from 0 to n-2 (range(0, n-1) --> where n-1 is not included)
+- The last element (n-1th) is automatically in place because all the smaller elements have been sorted before it.
+- The last element (n-1th) is automatically in place because all the smaller elements have been sorted before it.
+
+
 ### Use Cases of Selection Sort
 - Selection sort is not the most efficient algorithm for large datasets, but it has a few specific use cases where it might be considered:
 

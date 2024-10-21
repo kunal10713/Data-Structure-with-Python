@@ -22,4 +22,3 @@ for x in range(size):
     arr.append(element)  # Append each element to the list
 
 bubble_sort(arr, size)
-Key Changes:
