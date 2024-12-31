@@ -70,7 +70,8 @@ print("After Right Shift (n >> 1):", right_shift, "-> Binary:", bin(right_shift)
 
 ## Relationship Between Shift Operations and Powers of 2
 
-Left Shift (<<): Shifting left by n bits is equivalent to multiplying the number by 2 power of n
-Right Shift (>>): Shifting right by n bits is equivalent to dividing the number by 2 power of n, discarding any remainder.
+Left Shift (<<): Shifting left by n bits is equivalent to multiplying the number by 2 power of n.
+
+Right Shift (>>): Shifting right by n bits is equivalent to dividing the number by 2 power of n discarding any remainder.
 
 
