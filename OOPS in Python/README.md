@@ -50,7 +50,7 @@ A method is a function defined within a class that performs operations using the
 
 ```python
 
-`class Cluster:
+class Cluster:
     def __init__(self, name, nodes):
         self.name = name
         self.nodes = nodes
@@ -72,7 +72,7 @@ Now that we have defined our class with attributes and methods, let's create an 
 
 ```python
 
-`# Creating an object of Cluster class
+# Creating an object of Cluster class
 cluster1 = Cluster("DataCluster", 5)
 
 # Accessing the object's attributes and methods
@@ -90,7 +90,7 @@ For example, in `display_info`, we use `self.name` and `self.nodes` to access th
 
 ```python
 
-`class Cluster:
+class Cluster:
     # Initializing with name and number of nodes
     def __init__(self, name, nodes):
         self.name = name       # instance attribute for cluster name
